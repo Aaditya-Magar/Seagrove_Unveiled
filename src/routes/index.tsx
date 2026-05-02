@@ -96,12 +96,6 @@ function Hero() {
           ))}
         </div>
 
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.3 }} className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-ivory/60">
-          <span className="text-[10px] font-sub uppercase tracking-[0.3em]">Scroll</span>
-          <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 1.6, repeat: Infinity }}>
-            <ChevronDown size={16} className="text-gold" />
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );
