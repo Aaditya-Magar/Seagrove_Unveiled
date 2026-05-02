@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const projectCwd = process.cwd();
-const { default: workerEntry } = await import('../dist/server/index.js');
+let workerEntry;
 
 const contentTypeMap = {
   '.js': 'application/javascript',
@@ -68,6 +68,11 @@ export default async function handler(req, res) {
     headers: requestHeaders,
     body: ['GET', 'HEAD'].includes(req.method) ? undefined : req,
   });
+
+  if (!workerEntry) {
+    const loaded = await import('../dist/server/index.js');
+    workerEntry = loaded.default;
+  }
 
   const response = await workerEntry.fetch(request);
 
