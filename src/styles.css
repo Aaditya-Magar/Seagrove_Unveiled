@@ -79,8 +79,8 @@
   --accent-foreground: oklch(0.99 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.88 0.02 80);
-  --input: oklch(0.88 0.02 80);
+  --border: #d6cbb4;
+  --input: #d6cbb4;
   --ring: var(--gold);
   --chart-1: var(--gold);
   --chart-2: var(--teal);
