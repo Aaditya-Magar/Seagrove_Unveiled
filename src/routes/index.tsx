@@ -108,7 +108,7 @@ function Hero() {
 }
 
 function FeaturedRooms() {
-  const featured = rooms.slice(0, 3);
+  const featured = rooms.slice(1, 3);
   return (
     <section className="bg-ivory py-24 md:py-32">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
@@ -120,12 +120,10 @@ function FeaturedRooms() {
           <Link to="/rooms" className="story-link text-teal text-sm font-sub uppercase tracking-[0.2em]">View All Rooms →</Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          <RoomCard room={featured[0]} large className="md:col-span-7" />
-          <div className="md:col-span-5 grid gap-6">
-            <RoomCard room={featured[1]} />
-            <RoomCard room={featured[2]} />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {featured.map((room) => (
+            <RoomCard key={room.id} room={room} />
+          ))}
         </div>
       </div>
     </section>
