@@ -77,7 +77,7 @@ function Hero() {
           </button>
         </motion.div>
 
-        <div className="mt-10 hidden md:grid grid-cols-3 gap-4 w-full max-w-3xl px-6">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-5xl px-6">
           {[
             { v: "48", l: "Ocean Suites" },
             { v: "#1 Resort", l: "Goa 2024" },
