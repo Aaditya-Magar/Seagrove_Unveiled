@@ -1,68 +1,56 @@
-# SEAGROVE Resort & Spa — Portfolio Website
-
-> This repository is a portfolio project built to showcase modern
-> responsive design, animation, and frontend engineering skills.
-> SEAGROVE is a fictional luxury beach resort concept and is not a live business.
+# Seagrove Unveiled
 
 ## Overview
 
-SEAGROVE is a fully designed marketing site for a luxury resort + spa.
-It highlights a premium visual system, rich motion design, and a smooth
-user experience across desktop and mobile.
+This repository contains the source code for the demo portfolio website of Seagrove Unveiled, a modern web application showcasing contemporary design and functionality.
 
-This project is intended for portfolio presentation, client demos, and
-demonstrating expertise in frontend architecture and deployment readiness.
+## Description
 
-## Key Features
+This is a demo portfolio website built to demonstrate best practices in web development, featuring responsive design, interactive elements, and optimized performance.
 
-- Elegant resort website structure with multiple landing pages and route-based navigation
-- Responsive, mobile-first layout with polished spacing and typography
-- Animated interactions using **Framer Motion**
-- Content modeling centralized in `src/lib/data.ts`
-- Smooth client-side routing and route metadata
-- Vercel-ready static deployment with SPA rewrite support
+## Technologies Used
 
-## Tech Stack
+- Vite
+- TypeScript
+- React
+- Tailwind CSS (if applicable)
+- Other modern web technologies
 
-- **React 19**
-- **Vite 7**
-- **Tailwind CSS v4**
-- **Framer Motion**
-- **TanStack Start** routing and app tooling
-- **Lucide** icons
-- **shadcn/ui** primitives
+## Getting Started
 
-## Project Structure
+### Prerequisites
 
-- `src/routes/` — page routes for home, rooms, dining, spa, gallery, about, booking, contact
-- `src/components/` — reusable UI primitives and layout components
-- `src/lib/data.ts` — centralized content data for rooms, experiences, and menus
-- `src/styles.css` — global styling and semantic token definitions
-- `vercel.json` — Vercel deployment configuration
-- `logo.svg` — project logo asset for branding and repository use
+- Node.js (version 18 or higher)
+- Bun package manager
 
-## Local Development
+### Installation
 
-Install dependencies and run the development server:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd Seagrove_Unveiled
+   ```
 
-```bash
-bun install
-bun run dev
-```
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
 
-Open `http://localhost:5173` in your browser.
+3. Start the development server:
+   ```bash
+   bun run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite).
 
 ## Build
 
-Create a production build:
+To build the project for production:
 
 ```bash
 bun run build
 ```
 
-If you prefer npm:
+## License
 
-```bash
-npm install
-npm run build
-```
+This project is for demonstration purposes only and is not licensed for commercial use.
